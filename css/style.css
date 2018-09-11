@@ -156,6 +156,7 @@ About Page=========*/
 /*======
 contact======*/
 input[type=text],textarea {
+    letter-spacing: 5px;
     width: 645px;
     padding: 10px;
     border: 1px solid #ccc; 
@@ -165,17 +166,22 @@ input[type=text],textarea {
     resize: vertical;
 }
 input[type=submit] {
-   position: absolute;
-   top: 500px;
-   left: 20px;   
-   background-color: rgba(0,0,0,0);
-   color: white;
-   padding: 10px 300px;
-   border: 1px solid #fff;
-   cursor: pointer;
+    font-size: 21pt;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 500px;
+    left: 20px;   
+    background-color: rgba(0,0,0,0);
+    color: white;
+    padding: 10px 268px;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
+    font-size: 24pt;
    color: #FFF633;
    font-weight: bolder;
    border-color: #fff633;
@@ -188,6 +194,9 @@ input[type=submit]:hover {
    left: 100px;
    margin: 50px;
 
+    font-size: 21pt;
+    letter-spacing: 10px;
+    
    border-radius: 5px;
    background-color: rgb(105, 119, 243);
    padding: 20px;
