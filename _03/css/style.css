@@ -1,1 +1,25 @@
-body{background: blue;}
+body{
+    background-color: gold;
+}
+.container{
+    width: 800px;
+    height: 800px;
+}
+
+.top {
+    background-color: lightblue;
+    width: 800px;
+    height: 200px;
+}
+.bottom{
+    width: 800px;
+    height: 600px;
+}
+.bottomLeft {
+    background-color: lightcoral;
+
+}
+.bottomRight{
+    background-color: lightseagreen;
+
+}
