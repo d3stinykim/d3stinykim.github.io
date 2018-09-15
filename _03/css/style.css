@@ -1,25 +1,34 @@
 body{
-    background-color: gold;
+    margin: 0;
+    padding 0;
 }
 .container{
     width: 800px;
     height: 800px;
+    margin: 100px;
+    border: 10px solid black;
 }
 
 .top {
-    background-color: lightblue;
-    width: 800px;
-    height: 200px;
+    /*background-color: lightblue;*/
+    width: 100%;
+    height: 30%;
+    border-bottom: 10px solid black;
 }
 .bottom{
     width: 800px;
-    height: 600px;
+    height: 560px;
+    display: flex;
+    flex-flow: nowrap;
 }
 .bottomLeft {
-    background-color: lightcoral;
-
+    /*background-color: lightcoral;*/
+    width: 50%;
+    height: 100%;
+    border-right: 10px solid black;
 }
 .bottomRight{
-    background-color: lightseagreen;
-
+    /*background-color: lightseagreen;*/
+    width: 50%;
+    height: 100%;
 }
