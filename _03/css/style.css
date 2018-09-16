@@ -17,14 +17,12 @@
    height: 800px;
    width: 480px;
 }
-
 .right .rightTop{
    /*background-color: lightsalmon;*/
    height: 60%;
    width: 100%;
    border-bottom: 5px solid #666;
 }
-
 .right .rightBottom{
    /*background-color: lightseagreen;*/
    height: 40%;
