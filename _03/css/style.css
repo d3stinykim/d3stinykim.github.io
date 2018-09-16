@@ -64,6 +64,7 @@
    /*background-color:rgb(20, 20, 5);*/
    height: 800px;
    width: 480px;
+   overflow: hidden;
 }
 .right .rightTop{
    /*background-color: lightsalmon;*/
