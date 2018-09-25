@@ -20,45 +20,6 @@ html, body{
    padding: 1rem;
 }
 
-/*:: FLEX */
-.grid__wrapper--outer{
-   flex-direction: row;
-   flex-wrap: nowrap;
-}
-.grid__inner--top{
-   display: flex;
-   height: 30%;
-   width: 100%;
-   background: #fff;
-}
-.grid__inner--bottom{
-   overflow: auto;
-   align-content: stretch;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   display: flex;
-   height: 70%;
-   width: 100%;
-   position: relative;
-}
-.grid__inner--left{
-   align-content: stretch;
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   background: red;
-   margin: 1rem 1rem 0 0; /*top right bottom left*/
-}
-
-.grid__inner--right{
-   align-content: stretch;
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   background: blue;
-   margin: 1rem 0 0 0; /*top right bottom left*/
-}
-
 /* COLORS */
 .red{
    background: #d0341f;
@@ -79,13 +40,41 @@ html, body{
    background:#691b89;
 }
 
+/*:: FLEX */
+.grid__inner--top{
+   display: flex;
+   height: 30%;
+   width: 100%;
+/*   background: #fff;*/
+}
+.grid__inner--bottom{
+   overflow: hidden;
+   display: flex;
+   height: 70%;
+   width: 100%;
+   position: relative;
+}
+.grid__inner--left{
+   display: flex;
+   width: 50%;
+/*   background: red;*/
+   margin: 1rem 1rem 0 0; /*top right bottom left*/
+}
+
+.grid__inner--right{
+   display: flex;
+   width: 50%;
+/*   background: blue;*/
+   margin: 1rem 0 0 0; /*top right bottom left*/
+}
+
 /* TOP BAND LINES */
 .top__band{
    height: 100%;
    width: 1rem;
 }
 
-/* 33 bands in lower left*/
+/* 33 CIRCLES PROPERTY */
 .left__circle{
    position: absolute;
    right: 0;
@@ -99,6 +88,7 @@ html, body{
    bottom: 0;
    border-radius: 100%;
 }
+
 /* LEFT CIRCLE LINES */
 .left__circle:nth-child(1) {
    height: calc(100vw/33);
