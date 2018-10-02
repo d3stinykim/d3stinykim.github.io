@@ -1,65 +1,88 @@
 body{
-    background:#000 ;
-    color: #fff;
-    height: 100%;
-    text-align: center;
+  background:#000 ;
+  color: #fff;
+  height: 100%;
+  text-align: center;
 }
 
 h1{
-    padding: 50px 0;
-    letter-spacing: 10px;
-    font-size: 2rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-transform: uppercase;
+  padding: 50px 0;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
 }
-
+/*====== navigation bar======*/
 .emotion_wrapper{
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 .navigation_wrapper{
-    top: 0;
-    left:0;
+  top: 0;
+  left:0;
 }
 
 .navigation_wrapper ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
 }
 .navigation_wrapper ul li{
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
 
 li a{
-    padding: 14px 12px;
-    display: block; 
-    text-align: center;
-    text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
-    color:#fff;
+  padding: 14px 12px;
+  display: block; 
+  text-align: center;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  color:#fff;
 }
 
 li a{
-    color: #fff;
+  color: #fff;
 }
 
 li a:hover{
-   background-color: #ffa06a;
-   color: #fff;
+  background-color: #ffa06a;
+  color: #fff;
+}
+/*====== Emotion01 ======*/
+.emotion01{
+  width: 90%;
+  height: 60%;
+  margin: 20px auto;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.grad{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #323c93, #6966c4, #f7aac6, #ffa06a);
 }
 
-.emotion01{
-    width: 90%;
-    margin: 20px auto;
-    border: 1px solid #fff;
-    height: 600px;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom, #323c93, #6966c4, #f7aac6, #ffa06a);
+.slideInDown{
+  -webkit-animation: slideInDown 9s ease infinite;
+  animation: slideInDown 9s ease infinite;
 }
+
+@-webkit-keyframes slideInDown {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes slideInDown { 
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+/*====== Emotion02 ======*/
 .emotion02{
     background: yellow;
     border-radius: 50%;
@@ -67,15 +90,20 @@ li a:hover{
     height: 100px;
     width: 100px;
 }
-.emotion03{
-    position: relative;
-}
 .square{
     margin: 10px auto;
     background: turquoise;
     height: 100px;
     width: 100px;
 }
+/*====== Emotion03 ======*/
+.emotion03{
+    display: flex;
+    position: relative;
+    margin: 450px auto;
+
+}
+
 .top__band{
     position: absolute;
 }
