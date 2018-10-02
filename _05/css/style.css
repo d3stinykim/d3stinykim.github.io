@@ -101,7 +101,47 @@ li a:hover{
     display: flex;
     position: relative;
     margin: 450px auto;
+}
 
+@-webkit-keyframes pulse--custom {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse--custom {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse--custom {
+  -webkit-animation-name: pulse--custom;
+  animation-name: pulse--custom;
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
 }
 
 .top__band{
