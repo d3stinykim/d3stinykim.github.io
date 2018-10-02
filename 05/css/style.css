@@ -53,19 +53,42 @@ li a:hover{
 }
 /*====== Emotion01 ======*/
 .emotion01{
-  width: 90%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   margin: 20px auto;
-  border: 1px solid #fff;
   overflow: hidden;
 }
 .grad{
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  width: 400%;
+  height: 400%;
   background-image: linear-gradient(to bottom, #323c93, #6966c4, #f7aac6, #ffa06a);
 }
 
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+@keyframes scroll {
+  0%, 20% {
+  transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scroll {
+  ...
+  10% {
+  opacity: 1;
+  }
+  100% {
+  transform: translateY(36px) scaleY(2);
+  opacity: 0.01;
+  }
+}
+/*
 .slideInDown{
   -webkit-animation: slideInDown 9s ease infinite;
   animation: slideInDown 9s ease infinite;
@@ -81,20 +104,20 @@ li a:hover{
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-
+*/
 /*====== Emotion02 ======*/
 .emotion02{
     background: yellow;
     border-radius: 50%;
     margin: 100px auto;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
 }
 .square{
     margin: 10px auto;
     background: turquoise;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
 }
 /*====== Emotion03 ======*/
 .emotion03{
