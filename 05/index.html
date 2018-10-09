@@ -32,6 +32,7 @@
          @grid: 50x1 / 50vmin;
          perspective: 23vmin;
          }
+         stylel Zindex: -999;
 
          background: @multi(@r(200, 240), (
          radial-gradient(
@@ -58,12 +59,12 @@
          }
          95% {
          transform:
-         translate3d(0, 0, @r(5vmin, 15vmin))
-         rotate(@r(-360deg, 360deg));
+         translate3d(0, 0, @r(10vmin, 12vmin))
+         rotate(@r(-180deg, 180deg));
          }
          100% {
          opacity: 0;
-         transform: translate3d(0, 0, 55vmin);
+         transform: translate3d(0, 0, 12vmin);
          }
          }
       </css-doodle>

@@ -16,10 +16,13 @@ h1{
 .emotion_wrapper{
   display: flex;
   height: 100vh;
+  z-index: -1;
 }
 .navigation_wrapper{
   top: 0;
   left:0;
+  z-index: -1;
+  
 }
 
 .navigation_wrapper ul {
@@ -28,10 +31,14 @@ h1{
   overflow: hidden;
   list-style-type: none;
   width: 100%;
+  z-index: -1;
+
 }
 .navigation_wrapper ul li{
   float: left;
   width: 25%;
+  z-index: -1;
+
 }
 
 li a{
