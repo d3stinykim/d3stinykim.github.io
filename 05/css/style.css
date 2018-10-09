@@ -51,74 +51,196 @@ li a:hover{
   background-color: #ffa06a;
   color: #fff;
 }
-/*====== Emotion01 ======*/
-.emotion01{
-  width: 100%;
-  height: 100%;
-  margin: 20px auto;
-  overflow: hidden;
+/*====== Home======*/
+css-doodle{
+  margin: 100px auto;
 }
-.grad{
+/*====== Emotion01 ======*/
+.container {
   margin: 0 auto;
+  width: 100vw;
+  height: 60vh;
+}
+
+button {
+  width: 60vw;
+  height: 5vh;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #fff;
+
+  top: calc(50% - 18px);
+  border: solid 2px #fff;
+  background-image: linear-gradient(to top, #323c93, #6966c4, #f7aac6, #ffa06a);
+  background-size: auto 300%;
+  background-position: 0 100%;
+  transition: background-position 5s;
+}
+.container:hover button {
+  /* shift background gradient position */
+  background-position: 0 0;
+}
+
+.slider {
+  margin: 20px auto;
+  width: 60vw;
+  height: 60vh;
+  top: calc(50% - 18px);
+  background-image: linear-gradient(to top, #323c93, #6966c4, #f7aac6, #ffa06a);
+  background-size: auto 300%;
+  background-position: 0 100%;
+  transition: background-position 5s;
+}
+.container:hover .slider {
+  background-position: 0 0;: 0px;
+}
+
+/*
+.gradDynamic{
+  background-position: top;
   width: 400%;
   height: 400%;
-  background-image: linear-gradient(to bottom, #323c93, #6966c4, #f7aac6, #ffa06a);
+  background-image: linear-gradient(to bottom, #323c93, #6966c4, #f7aac6, #ffa06a)
 }
-
-.scroll {
-  animation-name: scroll;
-  animation-duration: 1.5s;
-  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
-  animation-iteration-count: infinite;
-  transform-origin: 50% 20.5px;
-  will-change: transform;
-}
-@keyframes scroll {
-  0%, 20% {
-  transform: translateY(0) scaleY(1);
-  }
-}
-@keyframes scroll {
-  ...
-  10% {
-  opacity: 1;
-  }
-  100% {
-  transform: translateY(36px) scaleY(2);
-  opacity: 0.01;
-  }
-}
-/*
-.slideInDown{
-  -webkit-animation: slideInDown 9s ease infinite;
-  animation: slideInDown 9s ease infinite;
-}
-
 @-webkit-keyframes slideInDown {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  from {
+    -webkit-transform: translate3d(0, -400%, 0);
+    transform: translate3d(0, -400%, 0);
+    visibility: visible;
+  }
+ 50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 400%, 0);
+  }
 }
-@keyframes slideInDown { 
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+ 50% {
+    -webkit-transform: scale3d(0.5, 0.5, 0);
+    transform: scale3d(0.5, 0.5, 0);
+  }
+  to {
+    -webkit-transform: translate3d(1, 1, 0);
+    transform: translate3d(1, 1, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown 3s linear infinite;
+  animation-name: slideInDown 3s linear infinite;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 */
 /*====== Emotion02 ======*/
+
 .emotion02{
-    background: yellow;
-    border-radius: 50%;
-    margin: 100px auto;
-    height: 60px;
-    width: 60px;
+  margin: 50px auto;
+
 }
 .square{
     margin: 10px auto;
     background: turquoise;
+    height: 100px;
+    width: 100px;
+}
+.circle{
+    position: bottom;
+    background: yellow;
+    border-radius: 50%;
+    margin: 0 auto;
     height: 60px;
     width: 60px;
 }
+@-webkit-keyframes rubberBand--custom {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand--custom {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand--custom {
+  -webkit-animation-name: rubberBand--custom;
+  animation-name: rubberBand--custom;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+
 /*====== Emotion03 ======*/
 .emotion03{
     display: flex;
@@ -163,8 +285,8 @@ li a:hover{
 .pulse--custom {
   -webkit-animation-name: pulse--custom;
   animation-name: pulse--custom;
-  -webkit-animation-duration: 9s;
-  animation-duration: 9s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 .top__band{

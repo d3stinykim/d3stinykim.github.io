@@ -10,6 +10,9 @@
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans" rel="stylesheet">
+   <script src="https://unpkg.com/css-doodle@0.4.9/css-doodle.min.js"></script>
+
+
 </head>
 
 <body>
@@ -24,7 +27,46 @@
    </div>
 
    <div class="emotion_wrapper">
-      <div class=""></div>
+      <css-doodle>
+         :doodle {
+         @grid: 50x1 / 50vmin;
+         perspective: 23vmin;
+         }
+
+         background: @multi(@r(200, 240), (
+         radial-gradient(
+         @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d) 15%,
+         transparent 50%
+         ) @r(100%) @r(100%) / @r(1%, 3%, .1) @lr() no-repeat
+         ));
+
+         @size: 60%;
+         @place-cell: center;
+
+         border-radius: 80%;
+         transform-style: preserve-3d;
+         animation: scale-up 20s linear infinite;
+         animation-delay: calc(@i() * -.4s);
+
+         @keyframes scale-up {
+         0% {
+         opacity: 0;
+         transform: translate3d(0, 0, 0) rotate(0);
+         }
+         10% {
+         opacity: 1;
+         }
+         95% {
+         transform:
+         translate3d(0, 0, @r(5vmin, 15vmin))
+         rotate(@r(-360deg, 360deg));
+         }
+         100% {
+         opacity: 0;
+         transform: translate3d(0, 0, 55vmin);
+         }
+         }
+      </css-doodle>
    </div>
 </body>
 
