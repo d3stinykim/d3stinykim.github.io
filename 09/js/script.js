@@ -38,6 +38,6 @@ document.onkeyup = function (event) {
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Arrow Down';
             document.getElementById('message').style.backgroundColor = "#7CCCE5";
       } else {
-            document.getElementById('message').style.backgroundColor = "#454545";
+            document.getElementById('message').style.backgroundColor = "#6F6456";
       }
 }
