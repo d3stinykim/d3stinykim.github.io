@@ -4,6 +4,7 @@ let coordinateWarapper = document.getElementById('coordinates');
 document.onkeyup = function (event) {
       const keyCodePressed = event.keyCode;
       document.getElementById('message').innerHTML = keyCodePressed;
+      document.getElementById('message').style.backgroundColor = "#454545";
       //console.log(keyCodePressed);
       if (keyCodePressed === 13) {
             //Generate random between 0 and whatever Math.random is multiplied
