@@ -1,0 +1,13 @@
+body{
+   background:#555E7B;
+   color: #fff;
+   text-align: center;
+   font-family: 'Share Tech Mono', monospace;
+}
+p{
+   font-size: 2em;
+}
+div{
+   font-size: 10em;
+   margin: 300px auto;
+}

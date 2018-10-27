@@ -1,0 +1,9 @@
+body{
+   background: #000;
+   color: #fff;
+   font-size: 10em;
+   text-align: center;
+}
+div{
+   margin: 300px auto;
+}
