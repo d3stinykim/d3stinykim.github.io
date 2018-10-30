@@ -14,27 +14,19 @@ document.onkeyup = function (event) {
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Enter';
             document.body.style.backgroundColor = "#B7D968";
       } else if (keyCodePressed === 37) {
-            const x = window.innerWidth;
-            const y = window.innerHeight;
-            console.log(x, y);
+
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Arrow Left';
             document.body.style.backgroundColor = "#B576AD";
       } else if (keyCodePressed === 38) {
-            const x = window.innerWidth;
-            const y = window.innerHeight;
-            console.log(x, y);
+
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Arrow Up';
             document.body.style.backgroundColor = "#E04644";
       } else if (keyCodePressed === 39) {
-            const x = window.innerWidth;
-            const y = window.innerHeight;
-            console.log(x, y);
+
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Arrow Right';
             document.body.style.backgroundColor = "#FDE47F";
       } else if (keyCodePressed === 40) {
-            const x = window.innerWidth;
-            const y = window.innerHeight;
-            console.log(x, y);
+
             document.getElementById('message').innerHTML = keyCodePressed + '<br>' + 'Arrow Down';
             document.body.style.backgroundColor = "#7CCCE5";
       } else {
