@@ -29,7 +29,7 @@
 
       if (keyCodePressed === 13) {
          const enterMessageDiv = document.createElement('div');
-         enterMessageDiv.innerText = 'You pressed the enter key!';
+         enterMessageDiv.innerText = 'Press other keys to paly!';
          messageWrapper.appendChild(enterMessageDiv);
 
       } else if (keyCodePressed === 67) {
