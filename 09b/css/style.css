@@ -27,6 +27,55 @@ svg {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#Drums:hover {
-  cursor: pointer;
+img {
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+
+}
+
+.bear {
+  height: auto;
+  max-width: 268px;
+  position: absolute;
+}
+
+.lights {
+  border-radius: 100px;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  background-color: rgba(0.1, 0.1, 0.1, 0.1);
+  -webkit-animation: colorchange 7s infinite;
+  animation: colorchange 7s infinite;
+}
+
+.phrase {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.5em;
+  position: absolute;
+}
+
+.animated {
+  -webkit-animation: colorchange 5s infinite;
+  animation: colorchange 5s infinite;
+}
+
+
+@keyframes colorchange
+{
+  0%   {background: rgba(255, 120, 0, 0.5);}
+  25%  {background: rgba(255, 255, 0, 1)}
+  50%  {background: rgba(255, 255, 153, 0.5);}
+  75%  {background: rgba(255, 191, 0, 1);}
+  100% {background: rgba(237, 229, 254, 0.5);}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: rgba(255, 120, 0, 0.5);}
+  25%  {background: rgba(255, 255, 0, 1)}
+  50%  {background: rgba(255, 255, 153, 0.5);}
+  75%  {background: rgba(255, 191, 0, 1);}
+  100% {background: rgba(237, 229, 254, 0.5);}
 }
