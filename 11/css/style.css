@@ -288,9 +288,9 @@ section{
 }
 #section01 p{
     color: #fff;
-    font-size: 0.5em;
-    line-height: 1.5rem;
-    letter-spacing: 0.1em;
+   font-size: 1.6rem;
+   letter-spacing: 0.1em;
+   line-height: 1.4;
 }
 /*Section02_Pros of Trees*/
 #section02{
@@ -299,7 +299,7 @@ section{
   margin-right: 100px;
   background: #f4f4f4;
   padding: 0 150px;
-  
+  font-family: 'IBM Plex Mono', monospace;
 }
 .gallery {
   list-style-type: none;
@@ -366,12 +366,68 @@ section{
    color: #fdd835;
    opacity: 1;
 }
+/* section04_donation */
+#section04{
+  margin: 0 auto;
+  font-family: 'IBM Plex Mono', monospace;
+  animation: colorchange 50s;
+  -webkit-animation: colorchange 50s;
+}
+    @keyframes colorchange
+    {
+      0%   {background: #b28ee6;}
+      25%  {background: #ff8486;}
+      50%  {background: #cca860;}
+      75%  {background: #bdff77;}
+      100% {background: #6abfcc;}
+    }
 
-/* Section04_contact */
-#section04 {
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #b28ee6;}
+      25%  {background: #ff8486;}
+      50%  {background: #cca860;}
+      75%  {background: #bdff77;}
+      100% {background: #6abfcc;}
+    }
+}
+#section04 h3{
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+}
+#section04 ul{
+  padding: 10px;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+#section04 li{
+  padding: 10px 20px;
+  list-style: none;
+}
+#section04 button{
+  background: #fdd835;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  width: 10vw;
+  cursor: pointer;
+}
+#section04 .donate{
+  width: 45vw;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 20px;
+}
+
+}
+
+/* Section05_contact */
+#section05 {
     position: relative;
 }
 input[type=text],textarea {
+    border-style: none;
     margin: 10px auto;
     margin-bottom: 50px;
     padding: 20px;
@@ -409,11 +465,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-font-size: 24pt;
+    font-size: 24pt;
     font-size: 0.6em;
     color:  #fff;
     border-color: rgba(220, 220, 80, 1);
-    background-color: rgba(220, 220, 80, 0.5);
+    background-color: rgba(102, 153, 102, 0.7);
 }
 
 .contact_container {
@@ -427,7 +483,7 @@ font-size: 24pt;
     letter-spacing: 10px;
     
    border-radius: 20px;
-   background-color: rgb(105, 119, 243);
+   background-color:#fdd835;
    padding: 30px;
    padding-bottom: 50px;
    font-size: 21pt;
@@ -441,14 +497,12 @@ font-size: 24pt;
 }
 .contact_wrapper {
     font-family: 'IBM Plex Mono', monospace;
-
     display: block;
     position: absolute;
     top: 15vh;
     right: 20vw;
 }
 .contact_info{
-
     line-height: 20pt;
     float: right;
     font-size: 16pt;
