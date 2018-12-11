@@ -495,10 +495,8 @@ input[type=submit]:hover {
     letter-spacing: 0.2em;
     display: block;
 }
-.contact_wrapper {
-    font-family: 'IBM Plex Mono', monospace;
+#section05.contact_wrapper {
     display: block;
-    position: absolute;
     top: 15vh;
     right: 20vw;
 }
@@ -509,6 +507,8 @@ input[type=submit]:hover {
 }
 .contact_info li{
   list-style: none;
+      font-family: 'IBM Plex Mono', monospace;
+
 }
 .contact_info li a{
    color: #fff;
