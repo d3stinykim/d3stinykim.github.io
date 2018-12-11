@@ -507,7 +507,9 @@ input[type=submit]:hover {
     float: right;
     font-size: 16pt;
 }
-
+.contact_info li{
+  list-style: none;
+}
 .contact_info li a{
    color: #fff;
    text-decoration: none;
