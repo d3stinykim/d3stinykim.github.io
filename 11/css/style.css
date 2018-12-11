@@ -1,0 +1,463 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background: #669966;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24pt;
+    color: #fff;
+}
+section{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+}
+
+/* F O G */
+.fogwrapper {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  height: 103vh;
+  position: absolute;
+  width: 200%;
+}
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#foglayer_01 {
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 25s linear infinite;
+  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 20s linear infinite;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 20s linear infinite;
+}
+#foglayer_02 {
+  -webkit-animation: foglayer_02_opacity 20s linear infinite, foglayer_moveme 25s linear infinite;
+  -moz-animation: foglayer_02_opacity 20s linear infinite, foglayer_moveme 20s linear infinite;
+  animation: foglayer_02_opacity 20s linear infinite, foglayer_moveme 20s linear infinite;
+}
+#foglayer_03 {
+  -webkit-animation: foglayer_02_opacity 10s linear infinite, foglayer_moveme 13s linear infinite;
+  -moz-animation: foglayer_02_opacity 10s linear infinite, foglayer_moveme 20s linear infinite;
+  animation: foglayer_02_opacity 10s linear infinite, foglayer_moveme 20s linear infinite;
+}
+
+/* Moving F O G */
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("../img/fog1.png") center center/cover no-repeat transparent;
+}
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02{
+  background: url("../img/fog2.png") center center/cover no-repeat transparent;
+}
+
+/* Keyframe Layer 01 */
+@-webkit-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .35; }
+  58% { opacity: .5; }
+  80% { opacity: .20; }
+  100% { opacity: .1; }
+}
+@-moz-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .35; }
+  58% { opacity: .5; }
+  80% { opacity: .20; }
+  100% { opacity: .1; }
+}
+@-o-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .35; }
+  58% { opacity: .5; }
+  80% { opacity: .20; }
+  100% { opacity: .1; }
+}
+@keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .35; }
+  58% { opacity: .5; }
+  80% { opacity: .20; }
+  100% { opacity: .1; }
+}
+/* Keyframe Layer 02 */
+@-webkit-keyframes foglayer_02_opacity {
+  0% { opacity: .8; }
+  25% { opacity: .5; }
+  50% { opacity: .4; }
+  80% { opacity: .7; }
+  100% { opacity: .8; }
+}
+@-moz-keyframes foglayer_02_opacity {
+  0% { opacity: .8; }
+  25% { opacity: .5; }
+  50% { opacity: .4; }
+  80% { opacity: .7; }
+  100% { opacity: .8; }
+}
+@-o-keyframes foglayer_02_opacity {
+  0% { opacity: .8; }
+  25% { opacity: .5; }
+  50% { opacity: .4; }
+  80% { opacity: .7; }
+  100% { opacity: .8; }
+}
+@keyframes foglayer_02_opacity {
+  0% { opacity: .8; }
+  25% { opacity: .5; }
+  50% { opacity: .4; }
+  80% { opacity: .7; }
+  100% { opacity: .8; }
+}
+/* Keyframe Layer 03 */
+@-webkit-keyframes foglayer_03_opacity {
+  0% { opacity: .9 }
+  27% { opacity: .3; }
+  52% { opacity: .7; }
+  68% { opacity: .4; }
+  100% { opacity: .9; }
+}
+@-moz-keyframes foglayer_03_opacity {
+  0% { opacity: .9 }
+  27% { opacity: .3; }
+  52% { opacity: .7; }
+  68% { opacity: .4; }
+  100% { opacity: .9; }
+}
+@-o-keyframes foglayer_03_opacity {
+  0% { opacity: .9 }
+  27% { opacity: .3; }
+  52% { opacity: .7; }
+  68% { opacity: .4; }
+  100% { opacity: .9; }
+}
+@keyframes foglayer_03_opacity {
+  0% { opacity: .9 }
+  27% { opacity: .3; }
+  52% { opacity: .7; }
+  68% { opacity: .4; }
+  100% { opacity: .9; }
+}
+/* Keyframe Moveme */
+@-webkit-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@media only screen
+  and (min-width: 280px)
+  and (max-width: 767px) {
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+      width: 100%;
+    }
+  }
+
+/* 00_title */
+.section00 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+    background-image: url(../img/forest_fog.jpg);
+
+}
+.section00 .title{
+    position: relative;
+}
+.section00 h5{
+    margin-bottom: 0;
+    line-height: 0;
+    color: rgba(255, 235, 39, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
+
+.section00 h1 {
+    font-size: 75pt;
+    letter-spacing: 2pt;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+/* 00_button */
+.section00 .button{
+    color: #fff;
+    font-size: 0.5em;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-family: 'IBM Plex Mono', monospace;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    display: inline-block;
+    background: none; 
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 10px 100px;
+}
+.section00 .button:hover{
+    font-size: 0.6em;
+    color:  #fff;
+    border-color:  rgba(255, 235, 39, 1);
+    background-color:  rgba(255, 235, 39,0.3);
+}
+
+/* 00_nav */
+.menu-nav-wrap{
+  width: 100px;
+  font-size: 16px;
+  position: fixed;
+  left: 0px;
+}
+.nav-list{
+  list-style: none;
+}
+.menu-nav-wrap .nav-list li{
+  text-decoration: none;
+}
+.menu-nav-wrap li a{
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 14px 12px;
+  display: block; 
+  text-align: center;
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.5);
+}
+/*
+.nav-list li:first-child a{
+  background: rgba(0, 200, 113, 0.5);
+  color:#fff; 
+  font-size: 20px;
+  text-decoration: underline;
+}
+*/
+.menu-nav-wrap li a:hover{
+  font-size: 20px;
+  text-decoration: underline;
+  background:  rgba(255, 235, 39, 0.5);
+  color:rgba(255, 255, 255,1);
+}
+.contents {
+    margin: 0 auto;
+    width: 60vw;
+
+}
+/* Section01_Why Trees? */
+#section01{
+  font-family: 'IBM Plex Mono', monospace;
+}
+#section01 h1{
+    margin:0 auto;
+}
+#section01 h5{  
+    margin: 0;
+    padding-top: 10px;
+    color: rgba(255, 235, 39, 1);
+
+}
+#section01 p{
+    color: #fff;
+    font-size: 0.5em;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+}
+/*Section02_Pros of Trees*/
+#section02{
+  margin: 0 auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: #f4f4f4;
+  padding: 0 150px;
+  
+}
+.gallery {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.gallery li {
+  float: left;
+  line-height: 0;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 45em) {
+  .gallery li {
+    width: 29%;
+  }
+}
+
+.gallery img {
+  height: auto;
+  width: 100%;
+}
+
+.gallery .caption {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  height: 0;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.gallery li:hover .caption {
+  height: 100%;
+  opacity: 1;
+  background: rgba(102, 153, 102, 0.7);
+}
+/*section03_contents*/
+#section03 {
+  margin: 200px auto;
+  font-size: 0.8em;
+  line-height: 2rem;
+  height: 280vh;
+  width: 60vw;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#section03 p.active{
+   transition: all 1s ease-in-out;
+   font-size: 1.6rem;
+   letter-spacing: 0.1em;
+   line-height: 1.4;
+   color: #fdd835;
+   opacity: 1;
+}
+
+/* Section04_contact */
+#section04 {
+    position: relative;
+}
+input[type=text],textarea {
+    margin: 10px auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 40vw;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+input[type=submit] {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;   
+    background-color: rgba(0,0,0,0); /*transparency*/
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 0.5em;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-family: 'IBM Plex Mono', monospace;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    margin: 12px;
+    width: 40vw;
+    height: 60px;
+}
+
+input[type=submit]:hover {
+font-size: 24pt;
+    font-size: 0.6em;
+    color:  #fff;
+    border-color: rgba(220, 220, 80, 1);
+    background-color: rgba(220, 220, 80, 0.5);
+}
+
+.contact_container {
+   display: block;
+   position: relative;
+   top: 10px;
+   left: -250px;
+   margin: 50px;
+
+    font-size: 21pt;
+    letter-spacing: 10px;
+    
+   border-radius: 20px;
+   background-color: rgb(105, 119, 243);
+   padding: 30px;
+   padding-bottom: 50px;
+   font-size: 21pt;
+   color: #fff;
+}
+.contact_container label{
+    font-size: 12pt;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.2em;
+    display: block;
+}
+.contact_wrapper {
+    font-family: 'IBM Plex Mono', monospace;
+
+    display: block;
+    position: absolute;
+    top: 15vh;
+    right: 20vw;
+}
+.contact_info{
+
+    line-height: 20pt;
+    float: right;
+    font-size: 16pt;
+}
+
+.contact_info li a{
+   color: #fff;
+   text-decoration: none;
+}
+
+
+
