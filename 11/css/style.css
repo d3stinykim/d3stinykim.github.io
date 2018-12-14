@@ -370,8 +370,8 @@ section{
 #section04{
   margin: 0 auto;
   font-family: 'IBM Plex Mono', monospace;
-  animation: colorchange 50s;
-  -webkit-animation: colorchange 50s;
+  animation: colorchange 5s;
+  -webkit-animation: colorchange 5s;
 }
     @keyframes colorchange
     {
@@ -425,18 +425,24 @@ section{
 /* Section05_contact */
 #section05 {
     position: relative;
+  }
+#section05 p {
+  font-size: 1.2em;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6em;
+
 }
 input[type=text],textarea {
+    font-family: 'IBM Plex Mono', monospace;
     border-style: none;
     margin: 10px auto;
     margin-bottom: 50px;
     padding: 20px;
     width: 40vw;
-    font-size: 0.5em;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
     box-sizing: border-box;
     position: relative;
-    font-family: 'IBM Plex Mono', monospace;
 
 }
 input[type=submit] {
@@ -451,8 +457,8 @@ input[type=submit] {
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: 0.1em;
-    font-family: 'IBM Plex Mono', monospace;
 
+    font-family: 'IBM Plex Mono', monospace;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -471,12 +477,11 @@ input[type=submit]:hover {
     border-color: rgba(220, 220, 80, 1);
     background-color: rgba(102, 153, 102, 0.7);
 }
-
 .contact_container {
    display: block;
    position: relative;
    top: 10px;
-   left: -250px;
+   left: 0;
    margin: 50px;
 
     font-size: 21pt;
@@ -495,25 +500,4 @@ input[type=submit]:hover {
     letter-spacing: 0.2em;
     display: block;
 }
-#section05.contact_wrapper {
-    display: block;
-    top: 15vh;
-    right: 20vw;
-}
-.contact_info{
-    line-height: 20pt;
-    float: right;
-    font-size: 16pt;
-}
-.contact_info li{
-  list-style: none;
-      font-family: 'IBM Plex Mono', monospace;
-
-}
-.contact_info li a{
-   color: #fff;
-   text-decoration: none;
-}
-
-
 
